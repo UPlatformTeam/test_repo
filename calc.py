@@ -13,10 +13,10 @@ def information(values, all):
         sum += values[k]['count']/float(all) * values[k]['entropy']
     return sum
 
-def gain(ent, info):
+def gain_Wrong(ent, info):
     return ent - info
 
-def find_info_and_gain(data, length, header):
+def findInfoAndGain(data, length, header):
     # print('***')
     # print(data)
     # print('***')
@@ -83,7 +83,7 @@ def find_info_and_gain(data, length, header):
         result.append({'header': header[i], 'info': info, 'gain': g})
     return result
 
-def remove_item(source, idx):
+def removeItem(source, idx):
     del source[idx]
     return source
 
