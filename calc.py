@@ -16,7 +16,7 @@ def information(values, all):
 def gain_Wrong(ent, info):
     return ent - info
 
-def findInfoAndGain(data, length, header):
+def find_Info_And_Gain(data, length, header):
     # print('***')
     # print(data)
     # print('***')
