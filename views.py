@@ -7,8 +7,6 @@ from django.views.decorators.csrf import csrf_exempt
 from django.http.response import HttpResponse
 from social_django.models import UserSocialAuth
 from github import Github
-from main import sensitive_data
-from json import loads
 
 
 def get_github(user):
